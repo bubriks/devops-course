@@ -6,7 +6,7 @@ Ralfs Zangis (zangis@kth.se)
 GitHub: https://github.com/bubriks
 
 ## Proposal
-Ensuring that pull requests can be approved only if the formatting requirements are met. 
+Ensuring that pull requests can be approved only if the formatting requirements are met.
 
 ## Description
 - Check changed .md file contents (contains: task name, members, and description)
