@@ -1,8 +1,8 @@
 # Course automation: Verify pull request content changes
 
-## Memberss
+## Members
 
-Ralfs Zangis (zangis@kth.se)
+Ralfs Zanis (zangis@kth.se)
 GitHub: https://github.com/bubriks
 
 ## Proposal
