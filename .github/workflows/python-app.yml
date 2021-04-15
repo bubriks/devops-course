@@ -9,25 +9,25 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    
+
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
         python-version: 3.9
-        
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        
+
     - id: changed-files
       name: Get changed files
       uses: jitterbit/get-changed-files@v1
-    
+
     - name: Verify location
       id: verify-location
       run: |
         python tools/verify_location.py main ${{ steps.changed-files.outputs.all }}
-        
+
     - name: Verify content
       id: verify-markdown
       uses: bubriks/file-content-checker@0.1.3
