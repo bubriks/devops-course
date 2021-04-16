@@ -1,5 +1,4 @@
 name: Markdown content and change location validation
-
 on: pull_request
 
 jobs:
