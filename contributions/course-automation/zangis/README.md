@@ -2,7 +2,7 @@
 
 ## Members
 
-Ralfs Zangis (zangis@kth.se)
+Ralfs Zangis (zangis@kth.se)dfg
 GitHub: https://github.com/bubriks
 
 ## Proposal
