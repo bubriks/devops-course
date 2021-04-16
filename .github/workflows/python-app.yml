@@ -23,10 +23,16 @@ jobs:
       name: Get changed files
       uses: jitterbit/get-changed-files@v1
     
+    - name: Verify content
+      id: verify-location
+      uses: bubriks/file-content-checker@0.1.3
+    
     - name: Verify location
       id: verify-location
-      run: |
-        python tools/verify_location.py main ${{ steps.changed-files.outputs.all }}
+      uses: bubriks/string-verifier@0.0.1
+      with:
+        expression: ^contributions/(.+)/(.+)/
+        strings: ${{ steps.changed-files.outputs.all }}
         
     - name: Verify content
       id: verify-markdown
