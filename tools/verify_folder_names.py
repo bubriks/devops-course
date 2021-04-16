@@ -22,19 +22,20 @@ def get_member_last_name_list(json_structure):
 
     return member_last_names
 
-def main(structure, category_folder, member_folder):
+def main(structure, folder_names):
+    folders = folder_names.split(" ")
     json_structure = json.loads(structure)
+    
+    expected_category_folder = get_category_folder(json_structure)
+    if(folders[0] != expected_category_folder):
+        sys.exit("Category folder doesnt match markdown file contents\n" +
+                 "Expected: " + expected_category_folder)
     
     member_last_names = get_member_last_name_list(json_structure)
     perms = ['-'.join(p) for p in permutations(member_last_names)]
-    if(member_folder not in perms):
+    if(folders[1] not in perms):
         sys.exit("Member names not represented in folder name\n" +
                  "Expected variations: " + str(perms))
-    
-    expected_category_folder = get_category_folder(json_structure)
-    if(category_folder != expected_category_folder):
-        sys.exit("Category folder doesnt match markdown file contents\n" +
-                 "Expected: " + expected_category_folder)
 
 if __name__ == '__main__':
-    globals()[sys.argv[1]](sys.argv[2], sys.argv[3], sys.argv[4])
+    globals()[sys.argv[1]](sys.argv[2], sys.argv[3])

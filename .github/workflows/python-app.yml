@@ -25,7 +25,7 @@ jobs:
     
     - name: Verify location
       id: verify-location
-      uses: bubriks/string-verifier@0.0.2
+      uses: bubriks/string-verifier@0.0.3
       with:
         expression: ^contributions/(.+)/(.+)/
         strings: ${{ steps.changed-files.outputs.all }}
@@ -83,4 +83,4 @@ jobs:
 
     - name: Verify folder names
       run: |
-        python tools/verify_folder_names.py main '${{ steps.verify-markdown.outputs.result }}' '${{ steps.verify-location.outputs.categoryfolder }}' '${{ steps.verify-location.outputs.memberfolder }}'
+        python tools/verify_folder_names.py main '${{ steps.verify-markdown.outputs.result }}' '${{ steps.verify-location.outputs.groups }}'
