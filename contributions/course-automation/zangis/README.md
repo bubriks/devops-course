@@ -2,7 +2,7 @@
 
 ## Members
 
-Ralfs Zangis (zangis@kth.se)
+Ralfs Zanis (zangis@kth.se)
 GitHub: https://github.com/bubriks
 
 ## Proposal
@@ -12,7 +12,7 @@ Ensuring that pull requests can be approved only if the formatting requirements 
 - Check changed .md file contents (contains: task name, members, and description)
 - Verify that the member names (from README.md) are represented in the containing folder name
 - Confirm that file structure follows the rules (no changes outside members folder in the selected category)
-- Inform user if any checks have failed (for more details on what    has failed check build)
+- Inform user if any checks have failed (for more details on what has failed check build)
 
 ## Final solution
 
