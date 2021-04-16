@@ -32,7 +32,7 @@ jobs:
       with:
         dsd: sdfs
         location: ^contributions/(.+)/(.+)/
-		changes: ${{ steps.changed-files.outputs.all }}
+        changes: ${{ steps.changed-files.outputs.all }}
         structure: >
           {
             "title": [
