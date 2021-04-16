@@ -1,4 +1,4 @@
-# Course automation: Verify pull request content changes
+# Course automation: Verify pull request content changes  
 
 ## Members
 
