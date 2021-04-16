@@ -1,5 +1,5 @@
 name: Python application for markdown content validation
-
+ 
 on: pull_request
 
 jobs:
