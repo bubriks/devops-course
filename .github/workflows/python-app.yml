@@ -23,10 +23,6 @@ jobs:
       name: Get changed files
       uses: jitterbit/get-changed-files@v1
     
-    - name: Verify content
-      id: verify-location
-      uses: bubriks/file-content-checker@0.1.3
-    
     - name: Verify location
       id: verify-location
       uses: bubriks/string-verifier@0.0.1
