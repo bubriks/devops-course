@@ -34,7 +34,7 @@ jobs:
       id: verify-markdown
       uses: bubriks/file-content-checker@0.1.3
       with:
-        path: ${{ steps.verify-location.outputs.result }}
+        path: ${{ steps.verify-location.outputs.result }}README.md
         structure: >
           {
             "title": [
